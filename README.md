@@ -49,10 +49,10 @@ $ composer run-script post-install-cmd
 ```
 
 ## Usage
-When you need it, just call `\Opawg\UserAgentsPhp\UserAgents::find()` for audio files or `\Opawg\UserAgentsPhp\UserAgentsRSS::find()` for RSS feed:
+When you need it, just call `\Opawg\UserAgentsV2Php\UserAgents::find()` for audio files or `\Opawg\UserAgentsV2Php\UserAgentsRSS::find()` for RSS feed:
 
 ```
-$player = \Opawg\UserAgentsPhp\UserAgents::find($_SERVER['HTTP_USER_AGENT']);
+$player = \Opawg\UserAgentsV2Php\UserAgents::find($_SERVER['HTTP_USER_AGENT']);
 if($player){
 	print player['app']."\n";
 	print player['device']."\n";
@@ -62,7 +62,7 @@ if($player){
 	print "This user-agent was not found.\n";
 }
 
-$service = \Opawg\UserAgentsPhp\UserAgentsRSS::find($_SERVER['HTTP_USER_AGENT']);
+$service = \Opawg\UserAgentsV2Php\UserAgentsRSS::find($_SERVER['HTTP_USER_AGENT']);
 if($player){
 	print service['name']."\n";
 	print service['slug']."\n";
