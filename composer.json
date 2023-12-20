@@ -1,0 +1,28 @@
+{
+  "name": "opawg/user-agents-v2-php",
+  "description": "PHP implementation for opawg/user-agents-v2.",
+  "homepage": "https://github.com/opawg/user-agents-v2-php",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Benjamin Bellamy",
+      "email": "benjamin@castopod.org",
+      "homepage": "https://castopod.org/"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Opawg\\UserAgentsPhp\\": "src/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "@php src/UserAgentsGenerate.php >  src/UserAgents.php",
+      "@php src/UserAgentsRSSGenerate.php >  src/UserAgentsRSS.php"
+    ],
+    "post-update-cmd": [
+      "@php src/UserAgentsGenerate.php >  src/UserAgents.php",
+      "@php src/UserAgentsRSSGenerate.php >  src/UserAgentsRSS.php"
+    ]
+  }
+}
