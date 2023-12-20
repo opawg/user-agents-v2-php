@@ -1,5 +1,5 @@
 # user-agents-v2-php
-This is a dummy PHP implementation for both [opawg/user-agents](https://github.com/opawg/user-agents-v2) and [opawg/podcast-rss-useragents](https://github.com/opawg/podcast-rss-useragents)
+This is a dummy PHP implementation for both [opawg/user-agents-v2](https://github.com/opawg/user-agents-v2) and [opawg/podcast-rss-useragents](https://github.com/opawg/podcast-rss-useragents)
 
 **Note:** For compatibility issue with [user-agents-php](https://github.com/opawg/user-agents-php) (version 1), the field `os` has not been deleted but is now deprecated and is always empty.
 
